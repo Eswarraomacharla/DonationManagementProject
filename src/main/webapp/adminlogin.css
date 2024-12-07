@@ -1,0 +1,114 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header styling */
+.form-header {
+  text-align: center;
+  font-size: 2.5em;
+  color: #007BFF;
+  margin-top: 50px;
+}
+
+/* Container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* Styling the form */
+.login-form {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Input fields */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Button styles */
+.btn {
+  width: 48%;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-secondary {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #ddd;
+}
+
+/* Form actions section */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Responsive Design for mobile */
+@media (max-width: 768px) {
+  .login-container {
+    height: auto;
+  }
+
+  .login-form {
+    padding: 30px 20px;
+  }
+
+  .form-header {
+    font-size: 2em;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

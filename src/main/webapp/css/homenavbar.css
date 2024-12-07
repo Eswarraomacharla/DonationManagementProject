@@ -1,0 +1,120 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: white; /* Light background */
+    border-bottom: 1px solid #ddd; /* Subtle border for separation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    position: relative;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffffff; /* Blue hover color */
+}
+
+/* Dropdown Menu */
+.navbar-links li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 10;
+    min-width: 200px; /* Set minimum width */
+    padding: 0; /* Remove padding */
+}
+
+/* Submenu items */
+.dropdown-menu li {
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.dropdown-menu a {
+    display: flex; /* Ensures text aligns properly */
+    justify-content: space-between; /* Space out arrow icon */
+    align-items: center;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 0.9rem; /* Adjust font size */
+}
+
+.dropdown-menu a:hover {
+    background-color: #0000ff; /* Light hover background */
+}
+
+/* Arrow icon for dropdown items */
+.dropdown-menu a::after {
+    content: "▼"; /* Downward arrow */
+    font-size: 0.6rem; /* Adjust size */
+    margin-left: auto;
+    color: #007bff;
+    transform: scale(0.8);
+}
+
+/* Nested Dropdown Styling */
+.dropdown-menu li:hover .dropdown-menu {
+    display: block;
+    top: 0;
+    left: 100%; /* Nested dropdown aligned to the right */
+    margin-left: 1px; /* Small gap */
+}
+
+.dropdown-menu .dropdown-menu {
+    border-radius: 4px;
+    min-width: 150px; /* Adjust minimum width */
+}
+
+/* Donate Button */
+.navbar-donate {
+    background-color: #ff6600; /* Bright orange background */
+    color: white;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-donate:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+}

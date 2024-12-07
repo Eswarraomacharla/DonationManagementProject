@@ -1,0 +1,101 @@
+/* donorreg.css */
+
+/* Body and Container Styling */
+body {
+    background-color: #f9fafb;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Element Styling */
+form label {
+    font-size: 1.2rem;
+    color: #555555;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="number"],
+form input[type="submit"],
+form input[type="reset"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="date"]:focus,
+form input[type="number"]:focus {
+    outline: none;
+    border-color: #6a5acd;
+    box-shadow: 0 0 3px rgba(106, 90, 205, 0.5);
+}
+
+/* Radio Button Styling */
+form input[type="radio"] {
+    margin-right: 8px;
+}
+
+form input[type="radio"] + label {
+    margin-right: 15px;
+}
+
+/* Button Styling */
+form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+form input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Miscellaneous */
+form {
+    margin-top: 20px;
+}
